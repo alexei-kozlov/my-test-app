@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waypoints in Directions</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<main>
+  <div id="map"></div>
+  <div id="right-panel">
+    <div>
+      <b>Start:</b>
+      <label for="start"></label>
+      <input id="start" type="text">
+      <br>
+      <b>End:</b>
+      <label for="end"></label>
+      <input id="end" type="text">
+      <br>
+      <button type="submit" id="submit">Get directions</button>
+    </div>
+    <div id="directions-panel"></div>
+  </div>
+</main>
+<script src="scripts/script.js" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&language=en" defer></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script>
+</body>
+</html>
